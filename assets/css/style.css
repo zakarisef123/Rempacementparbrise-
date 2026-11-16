@@ -772,3 +772,10 @@ td:first-child { font-weight: 600; color: var(--heading); }
 /* Photos des grandes étapes (accueil) */
 .phase-card { overflow: hidden; }
 .phase-photo { display: block; width: calc(100% + 48px); max-width: none; margin: -24px -24px 18px; aspect-ratio: 3 / 2; height: auto; object-fit: cover; border-bottom: 2px solid var(--accent); }
+
+/* Adresse du garage */
+.mode-address { display: flex; align-items: center; gap: 8px; margin: -4px 0 12px; font-weight: 600; }
+.mode-address svg { width: 18px; height: 18px; color: var(--accent); flex-shrink: 0; }
+.contact-list li a svg { width: 15px; height: 15px; vertical-align: -2px; }
+.footer .contact-mini a { line-height: 1.45; }
+.contact-list li a svg { display: inline-block; }
