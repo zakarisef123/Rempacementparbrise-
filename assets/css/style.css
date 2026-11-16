@@ -592,3 +592,36 @@ td:first-child { font-weight: 600; color: var(--heading); }
 @media (max-width: 560px) { .hide-xs { display: none; } }
 [data-ambiance="nuit"] .mobile-cta { background: #0e100c; border-top: 1px solid #23281d; }
 [data-ambiance="nuit"] .mobile-cta .btn--primary { background: #1e231a; color: #fff; border-color: rgba(150,218,11,.45); box-shadow: none; }
+
+/* ==========================================================
+   ASSURANCES — « pris en charge par votre assurance »
+   ========================================================== */
+.show-xs { display: none; }
+@media (max-width: 560px) { .show-xs { display: inline; } }
+.assur-band {
+  display: grid; grid-template-columns: 1.05fr 1fr; gap: clamp(28px, 5vw, 56px); align-items: center;
+  padding: clamp(26px, 4vw, 44px); border-radius: var(--radius-lg); background: var(--surface); border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+.assur-head p { color: var(--muted); }
+.assur-head .btn-row { margin-top: 20px; }
+.assur-band .btn--ghost { border-color: var(--line); color: var(--heading); }
+.insurers { display: flex; flex-wrap: wrap; gap: 10px; }
+.insurer {
+  padding: 10px 16px; border-radius: 12px; font-family: var(--font-title); font-weight: 700; font-size: .98rem; letter-spacing: .01em;
+  background: var(--soft); border: 1px solid var(--line); color: var(--heading);
+}
+.insurer--more { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+.insurer-note { font-size: .8rem; color: var(--muted); margin: 14px 0 0; }
+@media (max-width: 900px) { .assur-band { grid-template-columns: 1fr; } }
+[data-ambiance="nuit"] .assur-band { background: linear-gradient(140deg, #1a1f15, #12150f); border-color: #2b3125; }
+
+/* Vidéo d'en-tête sur mobile / tablette : affichée en grand au-dessus du texte */
+@media (max-width: 960px) {
+  .hero--video .hero-bg { position: relative; inset: auto; display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; }
+  .hero--video .hero-overlay {
+    inset: auto; top: 0; left: 0; right: 0; aspect-ratio: 16 / 9;
+    background: linear-gradient(180deg, rgba(10,10,10,.15) 0%, rgba(10,10,10,0) 45%, var(--darkest) 100%);
+  }
+  .hero--video .container { padding-top: 22px; }
+}
