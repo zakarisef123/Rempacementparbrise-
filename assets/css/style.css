@@ -661,3 +661,29 @@ td:first-child { font-weight: 600; color: var(--heading); }
   .insurer-logo img { max-height: 42px; }
   .insurer-logo--more > span { font-size: .8rem; }
 }
+
+/* Logos d'assureurs : deux bandeaux défilants (gauche / droite) */
+.insurer-marquees { display: grid; gap: 12px; margin: 0 -8px 18px; }
+.marquee {
+  overflow: hidden; padding: 4px 0;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent);
+          mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent);
+}
+.marquee-track, .marquee-dup { display: flex; gap: 12px; width: max-content; }
+.marquee-track { animation: marquee 45s linear infinite; }
+.marquee--right .marquee-track { animation-direction: reverse; }
+.marquee:hover .marquee-track { animation-play-state: paused; }
+@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(calc(-50% - 6px)); } }
+.marquee .insurer-logo { flex: 0 0 170px; }
+.marquee .insurer-logo > span { height: 76px; }
+.marquee .insurer-logo:hover > span { transform: none; }
+@media (max-width: 560px) {
+  .marquee .insurer-logo { flex-basis: 128px; }
+  .marquee .insurer-logo > span { height: 62px; }
+  .marquee-track { animation-duration: 35s; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .marquee { overflow-x: auto; -webkit-mask-image: none; mask-image: none; }
+  .marquee-track { animation: none; }
+  .marquee-dup { display: none; }
+}
