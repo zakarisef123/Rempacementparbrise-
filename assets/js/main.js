@@ -6,6 +6,10 @@
   var CONTACT_EMAIL = "contact@parebrise-express.fr";
   var WHATSAPP_NUMBER = "33600000000"; // format international sans "+" ni espaces
 
+  /* ---------- Aperçu d'une palette : ajouter ?palette=nom à l'adresse ---------- */
+  var preview = new URLSearchParams(window.location.search).get("palette");
+  if (preview) document.documentElement.setAttribute("data-palette", preview);
+
   /* ---------- Menu mobile ---------- */
   var toggle = document.querySelector(".nav-toggle");
   var nav = document.querySelector(".nav");
