@@ -10,6 +10,13 @@
   var preview = new URLSearchParams(window.location.search).get("palette");
   if (preview) document.documentElement.setAttribute("data-palette", preview);
 
+  /* ---------- Vidéo d'en-tête : pause si l'utilisateur préfère réduire les animations ---------- */
+  var heroVideo = document.querySelector(".hero-bg");
+  if (heroVideo && window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    heroVideo.removeAttribute("autoplay");
+    heroVideo.pause();
+  }
+
   /* ---------- Menu mobile ---------- */
   var toggle = document.querySelector(".nav-toggle");
   var nav = document.querySelector(".nav");
