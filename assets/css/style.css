@@ -900,3 +900,6 @@ html.cmp-lock { overflow: hidden; }
 .gift-visual img { object-fit: contain; padding: 6%; filter: drop-shadow(0 14px 18px rgba(0,0,0,.55)); transition: transform .3s; }
 .gift-card:hover .gift-visual img { transform: scale(1.05); }
 .gift-grid--mini .gift-visual img { padding: 4%; filter: drop-shadow(0 6px 8px rgba(0,0,0,.5)); }
+
+/* Bloc cadeaux juste sous la vidéo */
+.section--promo-first { padding-top: 28px; padding-bottom: 28px; background: linear-gradient(180deg, #0a0a0a, transparent); }
