@@ -9,6 +9,8 @@
   /* ---------- Aperçu d'une palette : ajouter ?palette=nom à l'adresse ---------- */
   var preview = new URLSearchParams(window.location.search).get("palette");
   if (preview) document.documentElement.setAttribute("data-palette", preview);
+  var ambiance = new URLSearchParams(window.location.search).get("ambiance");
+  if (ambiance) document.documentElement.setAttribute("data-ambiance", ambiance);
 
   /* ---------- Vidéo d'en-tête : pause si l'utilisateur préfère réduire les animations ---------- */
   var heroVideo = document.querySelector(".hero-bg");
