@@ -549,3 +549,46 @@ td:first-child { font-weight: 600; color: var(--heading); }
 /* Encarts posés sur la vidéo en mode Nuit */
 [data-ambiance="nuit"] .hero-card { background: rgba(20,23,17,.88); color: var(--ink-2); border: 1px solid rgba(150,218,11,.28); backdrop-filter: blur(6px); }
 [data-ambiance="nuit"] .hero-card strong { color: #fff; }
+
+/* ==========================================================
+   PROMOTION — cadeau offert
+   ========================================================== */
+.promo-strip {
+  display: flex; align-items: center; justify-content: center; gap: 10px; padding: 9px 16px;
+  background: var(--accent); color: var(--on-accent) !important; font-size: .92rem; text-align: center; text-decoration: none !important;
+}
+.promo-strip svg { width: 18px; height: 18px; flex-shrink: 0; }
+.promo-strip-cta { display: inline-flex; align-items: center; gap: 4px; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+.promo-strip-cta svg { width: 15px; height: 15px; }
+.promo-strip:hover { background: var(--accent-hover); }
+@media (max-width: 560px) { .promo-strip { font-size: .84rem; } .promo-strip-cta { display: none; } }
+
+.badge--promo { background: var(--accent); color: var(--on-accent); border-color: var(--accent); text-decoration: none !important; }
+.badge--promo svg { color: var(--on-accent); }
+
+.nav > a.nav-promo { color: var(--primary); }
+.nav > a.nav-promo svg { width: 17px; height: 17px; }
+[data-ambiance="nuit"] .nav > a.nav-promo { color: var(--accent); }
+
+.section--promo { padding-top: clamp(40px, 5vw, 64px); padding-bottom: clamp(40px, 5vw, 64px); }
+.promo-band {
+  display: grid; grid-template-columns: auto 1fr auto; gap: 28px; align-items: center;
+  padding: clamp(24px, 4vw, 40px); border-radius: var(--radius-lg); position: relative; overflow: hidden;
+  background: radial-gradient(600px 300px at 0% 50%, color-mix(in srgb, var(--accent) 26%, transparent), transparent 70%), linear-gradient(120deg, var(--dark-2), var(--darkest));
+  border: 1px solid color-mix(in srgb, var(--accent) 45%, transparent); color: var(--on-dark);
+}
+.promo-band h2 { color: #fff; margin-bottom: .3em; font-size: clamp(1.4rem, 2.6vw, 2rem); }
+.promo-band p { margin: 0; color: var(--on-dark-2); }
+.promo-band .eyebrow { color: var(--accent); margin-bottom: 6px; }
+.promo-ic {
+  width: 84px; height: 84px; border-radius: 22px; display: grid; place-items: center;
+  background: var(--accent); color: var(--on-accent); box-shadow: 0 0 0 8px color-mix(in srgb, var(--accent) 18%, transparent);
+}
+.promo-ic svg { width: 44px; height: 44px; }
+@media (max-width: 900px) { .promo-band { grid-template-columns: 1fr; } .promo-ic { width: 64px; height: 64px; border-radius: 18px; } .promo-ic svg { width: 34px; height: 34px; } }
+
+.steps--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+@media (max-width: 760px) { .steps--3 { grid-template-columns: 1fr; } }
+@media (max-width: 560px) { .hide-xs { display: none; } }
+[data-ambiance="nuit"] .mobile-cta { background: #0e100c; border-top: 1px solid #23281d; }
+[data-ambiance="nuit"] .mobile-cta .btn--primary { background: #1e231a; color: #fff; border-color: rgba(150,218,11,.45); box-shadow: none; }
