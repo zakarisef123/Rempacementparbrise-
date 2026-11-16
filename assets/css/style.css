@@ -640,3 +640,5 @@ td:first-child { font-weight: 600; color: var(--heading); }
 .insurers-label { font-size: .85rem; font-weight: 600; color: var(--muted); margin: 0 0 8px; }
 .insurers .insurer { padding: 7px 12px; font-size: .86rem; }
 @media (max-width: 420px) { .insurer-logos { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.insurer-logo > span { height: 80px; }
+.insurer-logo img { max-height: 54px; }
