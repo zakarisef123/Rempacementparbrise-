@@ -38,7 +38,7 @@
     {
       id: "external", enabled: true,
       title: "Contenus externes (cartes)",
-      text: "Affiche les cartes Google Maps et OpenStreetMap. Ces services peuvent déposer des cookies et recevoir votre adresse IP."
+      text: "Affiche la carte Google Maps du garage. Google peut déposer des cookies et recevoir votre adresse IP."
     }
   ];
   var ACTIVE = CATEGORIES.filter(function (c) { return c.enabled; });
