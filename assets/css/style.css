@@ -535,3 +535,17 @@ td:first-child { font-weight: 600; color: var(--heading); }
 [data-ambiance="nuit"] .cta-band { background: linear-gradient(120deg, #22300f, #0a0a0a); border: 1px solid rgba(150,218,11,.25); }
 [data-ambiance="nuit"] .card ul li::before { background: var(--primary) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230a0a0a' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12l5 5L20 7'/%3E%3C/svg%3E") center/10px no-repeat; }
 [data-ambiance="nuit"] .form-success { background: #16240a; border-color: #2f4a12; color: #c8f07a; }
+
+/* Logo : version claire / version pour fond sombre */
+.logo-dark { display: none; }
+[data-ambiance="nuit"] .header .logo-light { display: none; }
+[data-ambiance="nuit"] .header .logo-dark { display: block; }
+/* En-tête sombre en mode Nuit */
+[data-ambiance="nuit"] .header { background: rgba(10,11,9,.94); border-bottom-color: #23281d; }
+[data-ambiance="nuit"] .nav > a:hover, [data-ambiance="nuit"] .nav .dropdown > button:hover { background: #1e221a; color: var(--accent); }
+[data-ambiance="nuit"] .nav a.active, [data-ambiance="nuit"] .nav .dropdown.active > button { color: var(--accent); }
+/* Tableau dans un encart : pas de largeur minimale */
+.visual-box table { min-width: 0; }
+/* Encarts posés sur la vidéo en mode Nuit */
+[data-ambiance="nuit"] .hero-card { background: rgba(20,23,17,.88); color: var(--ink-2); border: 1px solid rgba(150,218,11,.28); backdrop-filter: blur(6px); }
+[data-ambiance="nuit"] .hero-card strong { color: #fff; }
