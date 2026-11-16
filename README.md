@@ -9,9 +9,8 @@ SAS au capital de 1 000 € – RCS Nîmes 106 576 226 – Calvisson (30420).
 |---|---|
 | `index.html` | Accueil |
 | `remplacement-pare-brise.html` | Remplacement de pare-brise |
-| `reparation-impact.html` | Réparation d'impact |
-| `nettoyage-automobile.html` | Nettoyage automobile |
-| `achat-vente-vehicules.html` | Achat, revente et mise à disposition de véhicules |
+| `deroulement.html` | Comment ça se passe ? (16 étapes) |
+| `promotions.html` | Promotion « cadeau offert » |
 | `assurance.html` | Prise en charge bris de glace |
 | `zone-intervention.html` | Communes desservies + carte |
 | `a-propos.html` | Présentation de l'entreprise |

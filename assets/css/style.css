@@ -768,3 +768,7 @@ td:first-child { font-weight: 600; color: var(--heading); }
   .nav > a[href="index.html"] { display: none; }
 }
 @media (max-width: 1180px) { .nav > a.nav-promo { justify-content: flex-start; gap: 8px; } }
+
+/* Photos des grandes étapes (accueil) */
+.phase-card { overflow: hidden; }
+.phase-photo { display: block; width: calc(100% + 48px); max-width: none; margin: -24px -24px 18px; aspect-ratio: 3 / 2; height: auto; object-fit: cover; border-bottom: 2px solid var(--accent); }
