@@ -1,6 +1,19 @@
 /* ==========================================================
    PARE BRISE EXPRESS — feuille de style principale
    ========================================================== */
+/* Polices hébergées sur le site (aucune requête vers Google Fonts) — licence SIL Open Font License */
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 400; font-display: swap; src: url('../fonts/inter-latin-ext-400-normal.woff2') format('woff2'); unicode-range: U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 400; font-display: swap; src: url('../fonts/inter-latin-400-normal.woff2') format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 600; font-display: swap; src: url('../fonts/inter-latin-ext-600-normal.woff2') format('woff2'); unicode-range: U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 600; font-display: swap; src: url('../fonts/inter-latin-600-normal.woff2') format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 700; font-display: swap; src: url('../fonts/inter-latin-ext-700-normal.woff2') format('woff2'); unicode-range: U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 700; font-display: swap; src: url('../fonts/inter-latin-700-normal.woff2') format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: 'Poppins'; font-style: normal; font-weight: 600; font-display: swap; src: url('../fonts/poppins-latin-ext-600-normal.woff2') format('woff2'); unicode-range: U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face { font-family: 'Poppins'; font-style: normal; font-weight: 600; font-display: swap; src: url('../fonts/poppins-latin-600-normal.woff2') format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: 'Poppins'; font-style: normal; font-weight: 700; font-display: swap; src: url('../fonts/poppins-latin-ext-700-normal.woff2') format('woff2'); unicode-range: U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face { font-family: 'Poppins'; font-style: normal; font-weight: 700; font-display: swap; src: url('../fonts/poppins-latin-700-normal.woff2') format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: 'Poppins'; font-style: normal; font-weight: 800; font-display: swap; src: url('../fonts/poppins-latin-ext-800-normal.woff2') format('woff2'); unicode-range: U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face { font-family: 'Poppins'; font-style: normal; font-weight: 800; font-display: swap; src: url('../fonts/poppins-latin-800-normal.woff2') format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
 /* Palette : toutes les couleurs du site viennent de ces variables.
    Pour changer de palette, modifier l'attribut data-palette sur <html>. */
 :root {
@@ -779,3 +792,75 @@ td:first-child { font-weight: 600; color: var(--heading); }
 .contact-list li a svg { width: 15px; height: 15px; vertical-align: -2px; }
 .footer .contact-mini a { line-height: 1.45; }
 .contact-list li a svg { display: inline-block; }
+
+/* ==========================================================
+   CONSENTEMENT COOKIES (CMP)
+   ========================================================== */
+.cmp-banner {
+  position: fixed; z-index: 1000; left: 50%; bottom: 16px; transform: translateX(-50%);
+  width: min(960px, calc(100% - 24px)); padding: 22px 24px 20px; border-radius: 18px;
+  background: #15180f; color: #e9ece4; border: 1px solid rgba(150,218,11,.35);
+  box-shadow: 0 20px 60px rgba(0,0,0,.55); font-size: .95rem;
+}
+.cmp-banner[hidden], .cmp-modal[hidden] { display: none; }
+.cmp-title { font-family: var(--font-title); font-weight: 700; font-size: 1.15rem; color: #fff; margin: 0 0 6px; }
+.cmp-desc { margin: 0 0 16px; color: #c9cec0; line-height: 1.55; }
+.cmp-desc a, .cmp-dialog a { color: var(--accent); text-decoration: underline; }
+.cmp-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.cmp-btn {
+  flex: 1 1 160px; padding: 12px 18px; border-radius: 999px; border: 2px solid var(--accent); cursor: pointer;
+  background: var(--accent); color: #0a0a0a; font: 700 .95rem var(--font);
+}
+.cmp-btn:hover { filter: brightness(1.08); }
+.cmp-btn--ghost { background: transparent; color: #fff; border-color: rgba(255,255,255,.35); }
+.cmp-btn:focus-visible, .cmp-close:focus-visible, .cmp-x:focus-visible { outline: 3px solid #fff; outline-offset: 2px; }
+.cmp-close { position: absolute; top: 12px; right: 14px; background: none; border: 0; color: #aab09f; font: 600 .82rem var(--font); cursor: pointer; padding: 6px; }
+.cmp-close:hover { color: #fff; }
+.cmp-banner .cmp-title { padding-right: 190px; }
+@media (max-width: 760px) {
+  .cmp-banner { bottom: 84px; padding: 40px 16px 16px; max-height: calc(100dvh - 110px); overflow-y: auto; }
+  .cmp-banner .cmp-title { padding-right: 0; }
+  .cmp-close { top: 8px; right: 8px; }
+}
+.cmp-modal { position: fixed; inset: 0; z-index: 1001; background: rgba(0,0,0,.65); display: grid; place-items: center; padding: 16px; }
+.cmp-dialog {
+  position: relative; width: min(640px, 100%); max-height: calc(100dvh - 32px); overflow-y: auto; outline: none;
+  background: #15180f; color: #e9ece4; border: 1px solid rgba(150,218,11,.35); border-radius: 20px; padding: 28px 24px 22px;
+}
+.cmp-x { position: absolute; top: 12px; right: 12px; width: 36px; height: 36px; border-radius: 50%; border: 0; background: rgba(255,255,255,.08); color: #fff; cursor: pointer; font-size: 1rem; }
+.cmp-cat { border-top: 1px solid rgba(255,255,255,.1); padding: 14px 0; }
+.cmp-cat-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.cmp-cat-title { font-weight: 700; color: #fff; }
+.cmp-cat p { margin: 6px 0 0; color: #b4baa9; font-size: .9rem; line-height: 1.5; }
+.cmp-always { font-size: .8rem; font-weight: 700; color: var(--accent); white-space: nowrap; }
+.cmp-switch { position: relative; width: 48px; height: 28px; flex-shrink: 0; }
+.cmp-switch input { position: absolute; inset: 0; opacity: 0; margin: 0; cursor: pointer; z-index: 1; }
+.cmp-switch span { position: absolute; inset: 0; border-radius: 999px; background: #3a4033; transition: background .2s; }
+.cmp-switch span::after { content: ""; position: absolute; top: 3px; left: 3px; width: 22px; height: 22px; border-radius: 50%; background: #fff; transition: transform .2s; }
+.cmp-switch input:checked + span { background: var(--accent); }
+.cmp-switch input:checked + span::after { transform: translateX(20px); }
+.cmp-switch input:focus-visible + span { outline: 3px solid #fff; outline-offset: 2px; }
+.cmp-dialog .cmp-actions { margin-top: 14px; }
+html.cmp-lock { overflow: hidden; }
+
+/* Cartes chargées seulement après accord */
+.ext-embed { min-height: 300px; display: grid; }
+.ext-placeholder {
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; text-align: center;
+  padding: 28px 22px; background: var(--soft); color: var(--muted);
+}
+.ext-placeholder p { margin: 0; max-width: 420px; font-size: .92rem; }
+.ext-placeholder strong { color: var(--heading); }
+.ext-ic { width: 52px; height: 52px; border-radius: 14px; display: grid; place-items: center; background: var(--tint); color: var(--primary); }
+.ext-ic svg { width: 26px; height: 26px; }
+.ext-alt { font-size: .88rem; }
+.ext-embed.is-loaded { display: block; min-height: 0; }
+
+/* Mentions légales et formulaires */
+.form-rgpd { font-size: .8rem; line-height: 1.5; color: var(--muted); margin: 4px 0 0; }
+.legal-updated { font-size: .9rem; color: var(--muted); font-style: italic; }
+.cookie-manage { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; justify-content: space-between; margin-bottom: 2em; }
+.cookie-manage p { margin: 0; }
+.prose .table-wrap table { min-width: 560px; }
+.prose .info-table { min-width: 0; }
+.prose td, .prose th { font-size: .93rem; }

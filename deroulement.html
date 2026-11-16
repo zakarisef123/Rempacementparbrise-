@@ -14,9 +14,18 @@
 <link rel="icon" href="assets/img/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <meta property="og:image" content="https://www.parebrise-express.fr/assets/img/logo.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<script>
+/* Google Consent Mode v2 : tout est refusé par défaut, avant tout chargement de balise Google. */
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('consent', 'default', {
+  ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied',
+  analytics_storage: 'denied', functionality_storage: 'denied', personalization_storage: 'denied',
+  security_storage: 'granted', wait_for_update: 500
+});
+gtag('set', 'ads_data_redaction', true);
+</script>
 <link rel="stylesheet" href="assets/css/style.css">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "AutoRepair", "name": "PARE BRISE EXPRESS", "legalName": "PARE BRISE EXPRESS SAS", "url": "https://www.parebrise-express.fr", "telephone": "+33626159377", "email": "contact@parebrise-express.fr", "address": {"@type": "PostalAddress", "streetAddress": "3 Avenue du 11 Novembre 1918", "postalCode": "30420", "addressLocality": "Calvisson", "addressRegion": "Occitanie", "addressCountry": "FR"}, "areaServed": ["Calvisson", "Nîmes", "Sommières", "Vergèze", "Lunel", "Gard"], "openingHours": "Mo-Sa 08:00-19:00", "hasMap": "https://www.google.com/maps/dir/?api=1&destination=3+Avenue+du+11+Novembre+1918,+30420+Calvisson", "taxID": "106 576 226", "logo": "https://www.parebrise-express.fr/assets/img/logo.png", "image": "https://www.parebrise-express.fr/assets/img/logo.png", "description": "Remplacement de pare-brise toutes marques, au garage ou à domicile, à Calvisson et dans le Gard."}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Combien de temps dure l'intervention ?", "acceptedAnswer": {"@type": "Answer", "text": "Comptez en général 1 à 2 heures d'intervention, auxquelles s'ajoute le temps de séchage de la colle avant de reprendre la route (souvent autour d'une heure)."}}, {"@type": "Question", "name": "Est-ce que je dois être présent ?", "acceptedAnswer": {"@type": "Answer", "text": "Votre présence est utile au début (remise des clés, documents) et à la fin (signature et consignes). Pendant l'intervention, vous pouvez vaquer à vos occupations."}}, {"@type": "Question", "name": "Que dois-je préparer ?", "acceptedAnswer": {"@type": "Answer", "text": "Votre carte verte ou attestation d'assurance, la carte grise du véhicule, et si possible une photo du dommage. Nous nous occupons du reste."}}]}</script>
@@ -179,7 +188,7 @@
     </div>
     <div class="footer-bottom">
       <span>© <span data-year>2026</span> PARE BRISE EXPRESS SAS – RCS Nîmes 106 576 226</span>
-      <nav aria-label="Liens légaux"><a href="mentions-legales.html">Mentions légales</a><a href="confidentialite.html">Politique de confidentialité</a><a href="sitemap.xml">Plan du site</a></nav>
+      <nav aria-label="Liens légaux"><a href="mentions-legales.html">Mentions légales</a><a href="cgv.html">CGV</a><a href="confidentialite.html">Confidentialité</a><a href="cookies.html">Cookies</a><a href="#" data-consent-open>Gérer les cookies</a><a href="sitemap.xml">Plan du site</a></nav>
     </div>
   </div>
 </footer>
@@ -187,6 +196,7 @@
   <a class="btn btn--primary" href="tel:+33626159377"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg> Appeler</a>
   <a class="btn btn--accent" href="devis.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h6"/></svg> Devis</a>
 </div>
+<script src="assets/js/consent.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>
