@@ -864,3 +864,9 @@ html.cmp-lock { overflow: hidden; }
 .prose .table-wrap table { min-width: 560px; }
 .prose .info-table { min-width: 0; }
 .prose td, .prose th { font-size: .93rem; }
+
+/* Tableau réglementation vitres teintées */
+.tint-table { min-width: 0; }
+.tint-ok, .tint-no { display: inline-block; padding: 3px 10px; border-radius: 999px; font-weight: 700; font-size: .85rem; }
+.tint-ok { background: var(--accent); color: var(--on-accent); }
+.tint-no { background: rgba(255,183,3,.15); color: #ffc94d; border: 1px solid rgba(255,183,3,.4); }
