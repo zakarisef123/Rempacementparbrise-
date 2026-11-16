@@ -107,13 +107,11 @@ ul { padding-left: 1.2em; }
 
 /* ---------- En-tête ---------- */
 .header { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,.96); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
-.header .container { display: flex; align-items: center; justify-content: space-between; height: 76px; gap: 20px; }
+.header .container { display: flex; align-items: center; justify-content: space-between; height: 88px; gap: 20px; }
 .logo { display: flex; align-items: center; gap: 10px; text-decoration: none !important; color: var(--heading); }
-.logo .l-bg { fill: var(--dark); } .logo .l-g1 { stop-color: var(--tint); } .logo .l-g2 { stop-color: var(--primary-2); } .logo .l-bar { fill: var(--accent); }
-.footer .logo .l-bg { fill: var(--dark-2); }
-.logo svg { width: 44px; height: 44px; }
-.logo-text { font-family: var(--font-title); font-weight: 800; font-size: 1.15rem; line-height: 1; letter-spacing: -.01em; }
-.logo-text small { display: block; font-family: var(--font); font-weight: 600; font-size: .68rem; letter-spacing: .14em; color: var(--primary); margin-top: 4px; text-transform: uppercase; }
+.logo img { height: 70px; width: auto; }
+.footer .logo img { height: 110px; }
+@media (max-width: 1060px) { .header .container { height: 76px; } .logo img { height: 60px; } }
 
 .nav { display: flex; align-items: center; gap: 4px; }
 .nav > a, .nav .dropdown > button {
@@ -142,7 +140,7 @@ ul { padding-left: 1.2em; }
 @media (max-width: 1060px) {
   .nav-toggle { display: block; }
   .nav {
-    position: absolute; top: 100%; left: 0; right: 0; height: calc(100vh - 76px); height: calc(100dvh - 76px); background: #fff; flex-direction: column; align-items: stretch;
+    position: absolute; top: 100%; left: 0; right: 0; height: calc(100vh - 76px); height: calc(100dvh - 76px); max-height: calc(100dvh - 76px); background: #fff; flex-direction: column; align-items: stretch;
     padding: 20px; gap: 2px; overflow-y: auto; border-top: 1px solid var(--line);
     opacity: 0; visibility: hidden; transform: translateY(-10px); transition: opacity .2s, transform .2s, visibility .2s;
   }
@@ -377,7 +375,6 @@ td:first-child { font-weight: 600; color: var(--heading); }
 .footer { background: var(--darkest); color: var(--on-dark-muted); padding: 70px 0 0; font-size: .95rem; }
 .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1.2fr; gap: 40px; }
 .footer .logo { color: #fff; margin-bottom: 16px; }
-.footer .logo-text small { color: var(--accent); }
 .footer h4 { color: #fff; font-size: 1rem; margin-bottom: 16px; }
 .footer ul { list-style: none; padding: 0; margin: 0; }
 .footer li { margin-bottom: 10px; }
@@ -439,15 +436,15 @@ td:first-child { font-weight: 600; color: var(--heading); }
   --glow: rgba(42,161,152,.35); --glow-2: rgba(227,163,59,.12);
 }
 
-/* 3. Noir & Lime — sportif, moderne, très contrasté */
+/* 3. Noir & Lime — sportif, moderne, très contrasté (vert du logo : #96da0b) */
 [data-palette="lime"] {
   --darkest: #0a0a0a; --dark: #121212; --dark-2: #222222; --heading: #0e0e0e;
   --primary: #3f6212; --primary-hover: #33500e; --primary-2: #65a30d;
-  --accent: #c6f432; --accent-hover: #b2e01c; --on-accent: #0a0a0a;
-  --tint: #f0f9d8; --tint-strong: #c6f432; --soft: #f4f4f2; --bg: #ffffff;
+  --accent: #96da0b; --accent-hover: #86c608; --on-accent: #0a0a0a;
+  --tint: #eef8db; --tint-strong: #96da0b; --soft: #f4f4f2; --bg: #ffffff;
   --ink: #141414; --ink-2: #3a3a3a; --muted: #6a6a6a; --line: #e5e5e2;
   --on-dark: #f0f0f0; --on-dark-2: #cfcfcf; --on-dark-muted: #9a9a9a;
-  --glow: rgba(198,244,50,.16); --glow-2: rgba(255,255,255,.04);
+  --glow: rgba(150,218,11,.16); --glow-2: rgba(255,255,255,.04);
 }
 
 /* 4. Garrigue — olive, terre cuite et crème, ancré dans le Sud */
