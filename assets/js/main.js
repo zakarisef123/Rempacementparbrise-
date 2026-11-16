@@ -4,7 +4,7 @@
 
   /* Coordonnées utilisées par les formulaires (à modifier si besoin) */
   var CONTACT_EMAIL = "contact@parebrise-express.fr";
-  var WHATSAPP_NUMBER = "33600000000"; // format international sans "+" ni espaces
+  var WHATSAPP_NUMBER = "33626159377"; // format international sans "+" ni espaces
 
   /* ---------- Aperçu d'une palette : ajouter ?palette=nom à l'adresse ---------- */
   var preview = new URLSearchParams(window.location.search).get("palette");
