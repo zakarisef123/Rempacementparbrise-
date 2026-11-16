@@ -22,13 +22,12 @@ SAS au capital de 1 000 € – RCS Nîmes 106 576 226 – Calvisson (30420).
 
 ## ⚠️ À remplacer avant la mise en ligne
 
+Téléphone et WhatsApp : **06 26 15 93 77** (déjà en place).
+
 Faire un « rechercher / remplacer » dans **tous les fichiers** :
 
 | Valeur provisoire | À remplacer par |
 |---|---|
-| `06 00 00 00 00` | Numéro de téléphone affiché |
-| `+33600000000` | Numéro au format international (liens d'appel) |
-| `33600000000` | Numéro WhatsApp (sans +), aussi dans `assets/js/main.js` |
 | `contact@parebrise-express.fr` | Adresse e-mail réelle (aussi dans `assets/js/main.js`) |
 | `https://www.parebrise-express.fr` | Nom de domaine réel |
 | `Lun – Sam : 8h00 – 19h00` | Horaires réels |
