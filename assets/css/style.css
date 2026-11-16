@@ -938,3 +938,21 @@ body.cmp-open .wa-float { bottom: 230px; }
   .topbar .wa-chip span { display: none; }
   .topbar .wa-chip { padding: 3px; margin-left: 4px; }
 }
+
+/* WhatsApp aux couleurs du site — logo officiel en version monochrome (blanc ou noir, autorisé par la charte WhatsApp) */
+.wa-logo circle { fill: transparent !important; }
+.wa-logo path { fill: currentColor !important; }
+.btn--whatsapp { background: #1e231a; color: #fff; border-color: var(--accent); box-shadow: none; }
+.btn--whatsapp:hover { background: #2a3322; border-color: var(--accent-hover); }
+.btn--whatsapp .wa-logo { color: #fff; }
+.wa-chip { background: rgba(150,218,11,.12); border-color: rgba(150,218,11,.5); }
+.wa-chip:hover { background: rgba(150,218,11,.24); }
+.wa-chip .wa-logo { color: #fff; }
+.wa-float { background: var(--accent); color: #0a0a0a !important; box-shadow: 0 10px 28px rgba(0,0,0,.45), 0 0 0 4px rgba(150,218,11,.18); }
+.wa-float:hover { background: var(--accent-hover); }
+.wa-float .wa-logo { color: #0a0a0a; width: 30px; height: 30px; }
+.wa-float { padding: 12px 20px 12px 14px; }
+.contact-list .ic--wa { background: var(--tint); }
+.contact-list .ic--wa .wa-logo { width: 26px; height: 26px; color: #fff; }
+.footer .contact-mini li.wa-line .wa-logo { color: #fff; }
+.mobile-cta .btn--whatsapp { background: #1e231a; border-color: rgba(150,218,11,.45); }
