@@ -956,3 +956,5 @@ body.cmp-open .wa-float { bottom: 230px; }
 .contact-list .ic--wa .wa-logo { width: 26px; height: 26px; color: #fff; }
 .footer .contact-mini li.wa-line .wa-logo { color: #fff; }
 .mobile-cta .btn--whatsapp { background: #1e231a; border-color: rgba(150,218,11,.45); }
+.mode-card .mode-actions { margin-top: auto; }
+.mode-card .mode-actions .btn { margin-top: 0; }
