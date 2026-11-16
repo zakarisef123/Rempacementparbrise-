@@ -38,7 +38,7 @@
   });
   document.addEventListener("click", function (e) {
     document.querySelectorAll(".dropdown.open").forEach(function (dd) {
-      if (!dd.contains(e.target) && window.innerWidth > 1060) dd.classList.remove("open");
+      if (!dd.contains(e.target) && window.innerWidth > 1180) dd.classList.remove("open");
     });
   });
 
